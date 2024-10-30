@@ -1,0 +1,250 @@
+*{
+    margin:0
+}
+body{
+    font-family: "Poppins", sans-serif;;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin:auto;
+    width:80%;
+}
+.tittle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tittle h1{
+font-size: 100px;
+color:#0001;
+position: relative;
+}
+.tittle h3 {
+    color:#212529;
+    font-size: 36px;
+    position: absolute;
+}
+.tittle h3::after{
+    content: "";
+    position:absolute;
+    background-color: #20c997;
+    width:90px;
+    height: 2px;
+    bottom:-5px;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.hero-section{
+    height:100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)) , url(../images/intro-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#dee3e4;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-section p:nth-child( 1 ){
+    font-size: 28px;
+}
+.hero-section p:nth-child( 2 ){
+    font-size: 21px;
+}
+.hero-section h2{
+    font-size: 64px;
+    margin-block: 15px;
+}
+.hero-section h2::after{
+    content:"|";
+    animation-name: typing;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes typing{
+    1% {content:"|"};
+    2% { content:" |"};
+    3%{
+        content:"a|";
+    }
+    4%{
+        content:"a |";
+    }
+    5%{
+        content:"a F|";
+    }
+    6%{
+        content:"a Fr|";
+    }
+    7%{
+        content:"a Fre|";
+    }
+    8%{
+        content:"a Free|";
+    }
+    9%{
+        content:"a Freel|";
+    }
+    10%{
+        content:"a Freela|";
+    }
+    11%{
+        content:"a Freelan|";
+    }
+    12%{
+        content:"a Freelanc|";
+    }
+    13%{
+        content:"a Freelance|";
+    }
+    14%{
+        content:"a Freelancer|";
+    }
+    15%{
+        content:"a Freelance|";
+    }
+    16%{
+        content:"a Freelanc|";
+    }
+    17%{
+        content:"a Freelan|";
+    }
+    18%{
+        content:"a Freela|";
+    }
+    19%{
+        content:"a Freel|";
+    }
+    20%{
+        content:"a Free|";
+    }
+    
+    21%{
+        content:"a Fre|";
+    }
+    22%{
+        content:"a Fr|";
+    }
+    23%{
+        content:"a F|";
+    }
+    24%{
+        content:"a |";
+    }
+    25%{
+        content:"a|";
+    }
+    26%{
+        content:"|";
+    }
+}
+.hero-section button{
+    background-color: transparent;
+    border-color: #20c997;
+    color:#20c997;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin-top: 50px;
+    transition: 0.5s all;
+}
+.hero-section button:hover{
+    background-color: #20c997;
+    color:white
+}
+.hero-section li a{
+    color:white
+}
+.about{
+    padding-block: 100px;
+}
+.about-content{
+    display: flex;
+    justify-content: center;
+    gap:20px
+}
+.about-text{
+    width:70%
+}
+.about-text p{
+    margin-block: 30px;
+    max-width: 700px;
+}
+.about-info ul li{
+    margin-block: 10px;
+    border-bottom: 1px solid #0001;
+    padding-bottom: 15px;
+}
+.about-count{
+    display: flex;
+    text-align: center;
+    width:fit-content;
+    margin: auto;
+    margin-top: 60px;
+    gap:80px
+}
+.about-count h4{
+    color:gray;
+    font-size: 50px;
+    font-weight: 500;
+}
+.about span{
+    font-size: 20px;
+}
+.about-count>div:not( :last-child){
+    border-right: 1px dotted #0005;
+    padding-right: 50px;
+}
+.resume .main-resume{
+    display: flex;
+    gap:50px
+}
+.resume .education h1, .resume .experience h1{
+    margin-bottom: 30px;
+}
+.resume-card .green-btn{
+    padding: 4px 10px;
+    background-color: #20c997;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #20c997
+}
+.resume-card{
+    border: 2px solid #0001;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px 10px
+}
+.skills h1{
+    margin-block: 40px;
+}
+.skill-bar{
+    
+    width:calc(calc(100% - 40px) /2);
+    margin-bottom: 40px;
+}
+.main-skills{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+}
+.bar-header{
+    display: flex;
+    justify-content: space-between;
+}
+.progress{
+    background-color: #0007;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.inner-prog{
+    background-color: #20c997;
+    height: 10px;
+}
